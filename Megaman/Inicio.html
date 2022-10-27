@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang = "es">
+<html>
+    <link href="estilos/estiloWeb.css" rel="stylesheet" type="text/css">
+
+    <head>
+        <title> Nintendo </title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width-decive-width, user- scalable=no, initial-scale-1, maximum-scale=1, minimun-scale=1">
+        <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+        <script language="JavaScript">
+            function mueveReloj () { 
+                momentoactual = new Date()
+                hora = momentoactual.getHours()
+                minutos = momentoactual.getMinutes()
+                segundos = momentoactual.getSeconds()
+
+                str_segundo = new String (segundos)
+                if (str_segundo.leght == 1)
+                    segundos = "0" + segundos
+
+                    str_minuto = new String (minutos)
+                    if (str_minuto.leght == 1)
+                        minutos = "0" + minutos
+
+                        str_hora = new String (hora)
+                        if (str_hora.leght == 1)
+                            hora = "0" + hora
+
+
+                            horaImportante = hora + " : " + minutos + " : " + segundos 
+
+                            document.form_reloj.reloj.value = horaImportante
+
+                            setTimeout( "mueveReloj()",1000)
+            }
+        </script>
+
+
+
+    </head>
+    
+    <body onload="mueveReloj()">
+            
+                <form name="form_reloj">
+                    <input type="text" name="reloj" size="10" style="background-color: rgb(133, 182, 236); 
+                    color: black; font-family: Verdana, Geneva, Tahoma, sans-serif;
+                     font-size: 8pt; text-align: center; 
+                    "onfocus="window.document.form_reloj.blur()">
+                </form>
+            
+             <center> <img src="foto1.png" width="560" height="200" /> </center> <br>
+        
+
+
+    <ul class="menu">
+        <li><a href="inicio.html">Inicio</a></li>
+        <li><a href="Video juegos.html">Videojuegos</a></li>
+        <li><a href="Figuras.html">Figuras</a></li>
+        <li><a href="Consolas.html">Consolas</a></li>
+        <li><a href="Mercancia.html">Mercancía</a></li>
+    </ul>
+    <br>
+
+    <center><p>
+        <iframe width="760" height="515" src="https://www.youtube.com/embed/pu76c3HCKg4" title="YouTube video player" 
+        frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+        allowfullscreen></iframe>
+      </p></center>
+
+
+      
+      <div class="texto"> </div><div id="carrusel">
+        
+        <a href="#" class="left-arrow"><img src="f1.png" width="50" height="50"/></a>
+        <a href="#" class="right-arrow"><img src="f2.png" width="50" height="50"/></a>
+        <div class="carrusel">
+            <div class="product" id="product_0">
+                <img src="s1.PNG" width="295" height="190" />
+                <h5>Bayoneta</h5>
+                <p>165.00 €</p>
+            </div>
+            <div class="product" id="product_1">
+                <img src="s4.PNG" width="285" height="190" />
+                <h5>Mario Rabbids</h5>
+                <p>100.00 €</p>
+            </div>
+            <div class="product" id="product_2">
+                <img src="s5.PNG" width="285" height="190" />
+                <h5>Bethesda</h5>
+                <p>250.00 €</p>
+            </div>
+            <div class="product" id="product_3">
+                <img src="s6.PNG" width="265" height="190" />
+                <h5>Ofertas</h5>
+                
+            </div>
+            <div class="product" id="product_4">
+                <img src="s7.PNG" width="295" height="190" />
+                <h5>Mario strikers</h5>
+                <p>65.00 €</p>
+            </div>
+            <div class="product" id="product_5">
+                <img src="s8.PNG" width="295" height="190" />
+                <h5>P5R Royal</h5>
+                <p>40.00 €</p>
+            </div>
+        </div>
+    </div>
+</div>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+</script>
+</center>   
+    
+  
+       
+            
+    </center>
+    
+    <center>
+        <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+    <script>
+    var current = 0;
+    var imagenes = new Array();
+     
+    $(document).ready(function() {
+        var numImages = 6;
+        if (numImages <= 3) {
+            $('.right-arrow').css('display', 'none');
+            $('.left-arrow').css('display', 'none');
+        }
+     
+        $('.left-arrow').on('click',function() {
+            if (current > 0) {
+                current = current - 1;
+            } else {
+                current = numImages - 3;
+            }
+     
+            $(".carrusel").animate({"left": -($('#product_'+current).position().left)}, 600);
+     
+            return false;
+        });
+     
+        $('.left-arrow').on('hover', function() {
+            $(this).css('opacity','0.5');
+        }, function() {
+            $(this).css('opacity','1');
+        });
+     
+        $('.right-arrow').on('hover', function() {
+            $(this).css('opacity','0.5');
+        }, function() {
+            $(this).css('opacity','1');
+        });
+     
+        $('.right-arrow').on('click', function() {
+            if (numImages > current + 3) {
+                current = current+1;
+            } else {
+                current = 0;
+            }
+     
+            $(".carrusel").animate({"left": -($('#product_'+current).position().left)}, 600);
+     
+            return false;
+        }); 
+     });
+    </script>
+    </center>   
+        
+        <center>
+            
+            
+        
+            <div class="texto">
+
+    
+             <b><i>Acerca de nosotros</i></b>
+             <br><br>
+             Nintendo lleva más de 120 años ofreciendo entretenimiento a gente de todas las edades. Tenemos el compromiso de crear experiencias divertidas para todos 
+             mediante nuestra amplia gama de juegos y un plantel de personajes reconocibles en todo el mundo.Nintendo tiene una larga trayectoria en la creación de
+              productos de entretenimiento que se remonta a 1889, cuando el fundador de la empresa, Fusajiro Yamauchi, comenzó con la producción de cartas de juego 
+              japonesas, las llamadas Hanafuda. Desde entonces, Nintendo se ha aventurado por otros caminos, incluida la producción de juguetes, y se ha convertido 
+              en una empresa pionera en el negocio del entretenimiento interactivo.
+             En la actualidad, Nintendo es célebre por sus videojuegos y se dedica a crear juegos con un marcado sentido del humor que llega a todo el mundo. Nintendo 
+             produce hardware líder de mercado, como las consolas de la familia Nintendo 3DS y Wii U, y cuenta entre sus activos con icónicas series de los videojuegos,
+              como Mario, Donkey Kong, The Legend of Zelda, Pokémon, Kirby, Animal Crossing y Metroid..</div>
+    
+    
+             <br><br>
+            
+
+                
+        </center>
+        
+    
+        <article>					
+            
+            
+            <div class="slider">
+    
+                <ul>
+                
+                                   
+    
+                                    
+    
+                                    
+    
+        </div>
+                </ul>
+    
+    
+    <!--Footer-->
+    <div id="abajo">
+        <center><p id="derechos">Copyright © 2021-2077 de México S. de R.L. de C.V.<br>
+            Quintero Martinez Nicole - 5AVPR<br>
+            Compostela 2118 Piso 9 Suite 900, Crédito Saldazo de Oxxo, 03940 Ciudad Obregón, Sonora, Mexico
+        </p></center>
+    
+    </div>
+            
+    </body>
+    
+    </html> 

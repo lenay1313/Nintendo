@@ -1,0 +1,131 @@
+/*
+Quintero Martinez Nicole
+24/10/2022
+5AVP
+*/
+
+body
+{
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: url(https://p4.wallpaperbetter.com/wallpaper/400/469/73/super-mario-super-mario-bros-video-games-pixel-art-pixels-hd-wallpaper-preview.jpg);
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: 100% 100%;
+	color:(#FFFFFF)
+}
+h1
+{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 50px;
+}
+
+h2
+{
+    font-family: inherit;
+    font-size: 27px;
+}
+
+.menu
+{
+    list-style: none;
+    padding: 0;
+    background: rgb(0, 0, 0);
+    width: 90%;
+    max-width: 538.5px;  
+    margin: auto;
+}
+
+.menu li a
+{
+    text-decoration: none;
+    color: white;
+    padding: 20px;
+    display: block;
+}
+
+.menu li
+{
+    display: inline-block;
+    text-align: center;
+}
+
+.menu li a:hover
+{
+    background: #002A69;
+}
+
+.texto
+{
+    background-color:no-font ;
+    display: table;
+    height: 120px;
+    margin: 2rem auto;
+    text-align: center;
+    width: 800px;
+	font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+	text-align: justify;
+}
+
+
+.contenido article {
+	padding: 30px;
+	background: #fff;
+}
+
+.contenido article p{
+	margin-bottom: 10px;
+	color:#000;
+}
+
+
+	/*/Menu*/
+	/*footer*/
+	#abajo{
+		background-color: antiquewhite;
+
+	}
+	#derechos{
+		color: #000;
+	}
+	
+	
+	#carrusel {
+		float:left;
+		width:1100px;
+		overflow:hidden;
+		height:403px;
+		position:relative;
+		margin-top:20px;
+		margin-bottom:20px;
+	}
+	 
+	#carrusel .left-arrow {
+		position:absolute;
+		left:190px;
+		z-index:1;
+		top:50%;
+		margin-top:-9px;
+	}
+	 
+	#carrusel .right-arrow {
+		position:absolute;
+		right:0px;
+		z-index:1;
+		top:50%;
+		margin-top:-9px;
+	}
+	 
+	.carrusel {
+		width:4000px;
+		left:200px;
+		position:absolute;
+		z-index:0;
+	}
+	 
+	.carrusel>div {
+		float: left;
+		height: 303px;
+		margin-right: 5px;
+		width: 295px;
+		text-align:center;
+	}
